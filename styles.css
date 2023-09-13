@@ -1,0 +1,6 @@
+#nav,#title,#menulinks{display: flex;justify-content: space-around;}
+
+#nav{flex-direction: column}
+
+
+#menulinks{list-style-type: none; padding: 0px; flex-direction: row;}
