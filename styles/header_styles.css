@@ -1,0 +1,35 @@
+#nav,#title,#menulinks{display: flex;justify-content: space-around;font-family: 'Segoe UI',
+    helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';}
+#nav{flex-direction: column}
+#menulinks{list-style-type: none; padding: 0px; flex-direction: row;color: green;font-size: 16px;}
+#title{font-size: 24px;}
+
+a{color: inherit;text-decoration: inherit}
+
+#menulinks a{color: inherit;text-decoration: inherit; font-family:'Courier New', Courier, monospace; }
+
+
+body{padding-top: 0px;}
+
+@media only screen and (min-width: 420px){
+    #menulinks{justify-content: center;}
+    #menulinks>li{padding-left: 40px;padding-right: 40px;}
+}
+
+@media only screen and (min-width: 750px){
+    #nav{flex-direction: row; align-items:center; justify-content: space-around;}
+    #menulinks>li{padding-left:0px;padding-right: 0px;flex-grow: 1;text-align: right;}
+    #menulinks{justify-content: right; margin-right: 20px;}
+    #title{margin-left: 20px;}
+    #nav>ul{flex-grow: 0.5;}
+}
+
+@media only screen and (min-width: 1000px){
+    #nav{justify-content: center;}
+    #nav>ul{flex-grow: 0;margin-left: 140px;margin-top: 5px;margin-right: 0px;}
+    #menulinks>li{margin-left: 50px;}
+    #nav>h1{margin-right: 140px;margin-top: 5px;margin-left: 0px;}
+
+}
+
