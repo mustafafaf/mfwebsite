@@ -29,7 +29,7 @@ ul{list-style-type: none;}
 
 
 #modules .post{width: 660px;}
-.post li{padding-bottom: 15px;}
+.post li+li{padding-top: 15px;}
 .post {padding: 20px; border-style: solid; border-width: 1px; border-color: rgba(184, 159, 159, 0.397);border-radius: 3px;}
 
 
