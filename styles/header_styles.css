@@ -12,6 +12,8 @@ a{color: inherit;text-decoration: inherit}
 
 body{padding-top: 0px;}
 
+
+
 @media only screen and (min-width: 420px){
     #menulinks{justify-content: center;}
     #menulinks>li{padding-left: 40px;padding-right: 40px;}
