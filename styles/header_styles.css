@@ -3,12 +3,12 @@
     'Segoe UI Symbol';}
 #nav{flex-direction: column}
 #menulinks{list-style-type: none; padding: 0px; flex-direction: row;color: green;font-size: 16px;}
-#title{font-size: 24px;}
+
 
 a{color: inherit;text-decoration: inherit}
 
-#menulinks a{color: inherit;text-decoration: inherit; font-family:'Courier New', Courier, monospace; }
-
+#menulinks a{color: inherit;text-decoration: inherit; font-family:'Courier New', Courier, monospace;font-weight: 900; }
+#title{font-size: 26px}
 
 body{padding-top: 0px;}
 
@@ -26,10 +26,12 @@ body{padding-top: 0px;}
 }
 
 @media only screen and (min-width: 1000px){
-    #nav{justify-content: center;}
-    #nav>ul{flex-grow: 0;margin-left: 140px;margin-top: 5px;margin-right: 0px;}
+    #nav{justify-content: center; align-content: center;}
+    #nav>ul{flex-grow: 0;margin-left: 140px;margin-top: 5px;margin-right: 0px;margin-bottom: 5px}
     #menulinks>li{margin-left: 50px;}
-    #nav>h1{margin-right: 140px;margin-top: 5px;margin-left: 0px;}
+    #nav>h1{margin-right: 140px;margin-top: 5px;margin-left: 0px;margin-bottom: 5px;}
+    
 
 }
 
+#topbar{margin-bottom: 30px;}

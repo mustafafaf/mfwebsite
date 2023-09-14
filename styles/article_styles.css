@@ -1,0 +1,47 @@
+#content{font-family: 'Segoe UI',
+    helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';margin-top: 50px;}
+
+a{color: inherit;text-decoration: inherit}
+ul{list-style-type: none;}
+.article, .about{
+    width: 660px;margin: auto;margin-top: 0px;margin-bottom: 0px;
+    padding: 20px}
+
+.article{border-style: solid; border-width: 1px; border-color: black; border-radius: 10px
+
+}
+.article p,.article h2{margin: 0px;}
+
+#content footer{color: gray;font-size: 13px;}
+.article div{margin-top: 8px;margin-bottom: 8px;}
+.article h2{font-weight: 450;}
+
+#modules>li{margin: auto;width: max-content;margin-top: 0px;margin-bottom: 50px;}
+#modules>li>a{display: inline-block;vertical-align: top}
+#content ul{padding: 0px;}
+
+.about>ul{list-style-type: none;padding: 0px;font-size: 18px;margin: 0px;}
+.about li{color: grey; padding-bottom: 20px;}
+.about li>a{color: rgb(38, 34, 34);}
+
+#modules{margin-top: 30px;}
+
+
+#modules .post{width: 660px;}
+.post li{padding-bottom: 15px;}
+.post {padding: 20px; border-style: solid; border-width: 1px; border-color: rgba(184, 159, 159, 0.397);border-radius: 3px;}
+
+
+@media only screen and (max-width: 720px){
+    #modules .article,#modules .post{width:auto;}
+    #modules>li>a{width: 100%;margin: auto}
+    
+    #modules>li{width: 80%;}
+
+    .about{width: 80%;}
+}
+
+
+
+.article{background-color: rgb(248, 248, 248);}
