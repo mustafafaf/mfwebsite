@@ -7531,7 +7531,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Titanic-Predictions">Titanic Predictions<a class="anchor-link" href="#Titanic-Predictions">¶</a></h1><p>The purpose of this notebook is to familiarise myself with using Jupyter Notebooks, as well as having it be a first post for my personal blog website. The purpose is not to showcase any ml skills, which is why I will essensially be following the Titanic tutorial found <a href="https://www.kaggle.com/code/alexisbcook/titanic-tutorial">here</a>.</p>
+<h1 id="Titanic-Predictions">Titanic Predictions<a class="anchor-link" href="#Titanic-Predictions">¶</a></h1><p>The purpose of this project is to familiarise myself with using Jupyter Notebooks, as well as having it be a first post for my personal blog website. The purpose is not to showcase any ml skills, which is why I will essensially be following the Titanic tutorial found <a href="https://www.kaggle.com/code/alexisbcook/titanic-tutorial">here</a>.</p><br><p style="font-weight:500;">In this project I will be training a machine learning model to analyse the infomation of 80% of passengers on the Titanic ship, and then using it to predict who would survive out of the remaining 20%</p>
 </div>
 </div>
 </div>
@@ -7692,11 +7692,11 @@ a.anchor-link {
 <p><code>get_dummies()</code> creates dummy variables from categorical variables. For example, <em>Sex</em> contains values of male and female,
 this would remove that column and replace it with <em>Sex_male</em> and <em>Sex_female</em> columns with values True and False, which is better for machine learning.</p>
 <p>The attributes I am training this model with are:</p>
-<ul>
-<li>Passenger class(Pclass)</li>
-<li>sex</li>
-<li>Number of siblings/spouses on board(SibSp)</li>
-<li>Number of parents/children on board</li>
+<ul style="list-style-type: disc;">
+<li style="list-style-type:circle;">Passenger class (Pclass)</li>
+<li>Sex</li>
+<li>Number of siblings/spouses on board (SibSp)</li>
+<li>Number of parents/children on board (Parch)</li>
 </ul>
 </div>
 </div>
@@ -7742,9 +7742,8 @@ this would remove that column and replace it with <em>Sex_male</em> and <em>Sex_
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="model_explanation" src="https://d2mk45aasx86xg.cloudfront.net/Random_Forest_Algorithm_400798756c.webp"/><br/>
-This diagram shows the model used. For each passenger, there are 100 trees of maximum depth 5 voting for each passenger.<br/>
-Now we make our predictions.</p>
+<p><img alt="model_explanation" src="https://i.imgur.com/AC9Bq63.png"/><br/>
+<br>This diagram shows the model used. A tree uses some traits (which are randomly selected) to predict whether the passenger survives or not.<br>For each passenger 100 of these trees predict their fate, and the random forest returns the prediction with the most votes.<br>For our model, the maximum amount of branching in the tree is 5.</p>
 </div>
 </div>
 </div>
